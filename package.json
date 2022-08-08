@@ -1,0 +1,22 @@
+{
+  "name": "projet_3_simon_jason_030822",
+  "version": "1.0.0",
+  "description": "Projet 3 OpenClassrooms ohmyfood",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sjunt/ohmyfood.git"
+  },
+  "author": "Simon Jason",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sjunt/ohmyfood/issues"
+  },
+  "homepage": "https://github.com/Sjunt/ohmyfood#readme",
+  "devDependencies": {
+    "sass": "^1.54.3"
+  }
+}
