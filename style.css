@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,400&family=Shrikhand&display=swap");
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0px;
+}
+
+/* logo */
+header {
+  position: relative;
+  font-family: "Shrikhand";
+  font-size: smaller;
+  text-align: center;
+  box-shadow: 0 0 0.3rem rgba(0, 0, 0, 0.25);
+  padding: 0.1px;
+}
+header h1 {
+  margin: 7px;
+}
+
+/* localisation */
+.location {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eaeaea;
+  gap: 1rem;
+}
+.location h2, .location i {
+  font-size: medium;
+  color: rgba(0, 0, 0, 0.788);
+}
+
+/* Exploreur restaurants */
+.explorer {
+  text-align: center;
+  background-color: #f6f6f6;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.explorer h2 {
+  margin: 0;
+  padding: 0px 3rem;
+}
+.explorer p {
+  color: grey;
+  margin: 10px;
+}
+.explorer button {
+  font-size: medium;
+  color: white;
+  padding: 1rem;
+  margin: 13px;
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  border-radius: 2rem;
+  border: none;
+  box-shadow: 2px 2px 11px -7px black;
+  cursor: pointer;
+}
+.explorer button:hover {
+  opacity: 0.7;
+  box-shadow: 3px 3px 15px black;
+}
+
+.choose h2 {
+  margin: 35px 0px 25px 20px;
+}
+.choose ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 25px;
+}
+.choose li {
+  justify-content: center;
+  margin-bottom: 25px;
+  border-radius: 25px;
+  box-shadow: 2px 2px 11px -7px black;
+  background-color: #f6f6f6;
+  padding: 30px 5px 30px 5px;
+}
+@media (max-width: 767px) {
+  .choose li {
+    width: 90%;
+  }
+}
+.choose li .description {
+  font-weight: bold;
+}
+.choose li .number {
+  color: white;
+  background-color: #9256dc;
+  padding: 3px 7px 3px 7px;
+  border-radius: 12px;
+  font-size: small;
+  position: absolute;
+  left: 10px;
+}
+.choose li i {
+  color: grey;
+  margin-right: 20px;
+  margin-left: 20px;
+  font-size: large;
+}
+.choose li:hover {
+  opacity: 0.7;
+  box-shadow: 3px 3px 15px black;
+}
+
+/*# sourceMappingURL=style.css.map */

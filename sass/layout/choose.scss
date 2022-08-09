@@ -1,0 +1,44 @@
+.choose{
+    & h2{
+        margin: 35px 0px 25px 20px;
+    }
+    & ul{
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 25px;
+    }
+    & li{
+        justify-content: center;
+        margin-bottom: 25px;
+        border-radius: 25px;
+        @include base-shadow;
+        background-color: #f6f6f6;
+        padding: 30px 5px 30px 5px;
+        @media (max-width: 767px) {
+            width: 90%; 
+        }
+        & .description {
+            font-weight: bold;
+        }
+        & .number{
+            color: white;
+            background-color: #9256dc;
+            padding: 3px 7px 3px 7px;
+            border-radius: 12px;
+            font-size: small;
+            position: absolute;
+            left: 10px;
+        }
+        & i {
+            color: grey;
+            margin-right: 20px;
+            margin-left: 20px;
+            font-size: large;
+        }
+        &:hover{
+            @include opacity_shadow
+        }
+    }
+}
+

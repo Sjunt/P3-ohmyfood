@@ -1,0 +1,33 @@
+@import "../utils/box-shadows.scss";
+@import "../utils/hover.scss";
+
+/* Exploreur restaurants */
+.explorer{
+    text-align: center;
+    background-color: #f6f6f6;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    & h2{
+        margin: 0;
+        padding: 0px 3rem;
+    }
+    & p{
+        color: grey;
+        margin: 10px;
+    }
+    & button{
+        font-size: medium;
+        color: white;
+        padding: 1rem;
+        margin: 13px;
+        background-image: linear-gradient( #FF79DA, #9356DC);
+        border-radius: 2rem;
+        border: none;
+        @include base-shadow;
+        cursor: pointer;
+        &:hover{
+            @include opacity_shadow;
+        }
+    }
+}
+

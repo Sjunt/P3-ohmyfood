@@ -1,0 +1,12 @@
+/* localisation */
+.location{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #eaeaea;
+    gap: 1rem;
+        & h2, i{
+        font-size: medium;
+        color: rgba(0, 0, 0, 0.788);
+    }
+}
