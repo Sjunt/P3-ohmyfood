@@ -50,7 +50,7 @@ header h1 {
   color: white;
   padding: 1rem;
   margin: 13px;
-  background-image: linear-gradient(#FF79DA, #9356DC);
+  background-image: linear-gradient(175deg, #FF79DA 1%, #9356DC);
   border-radius: 2rem;
   border: none;
   box-shadow: 2px 2px 11px -7px black;
@@ -63,6 +63,11 @@ header h1 {
 
 .choose h2 {
   margin: 35px 0px 25px 20px;
+}
+@media (min-width: 768px) {
+  .choose h2 {
+    text-align: center;
+  }
 }
 .choose ul {
   list-style: none;
@@ -77,10 +82,13 @@ header h1 {
   box-shadow: 2px 2px 11px -7px black;
   background-color: #f6f6f6;
   padding: 30px 5px 30px 5px;
+  width: 90%;
 }
-@media (max-width: 767px) {
+@media (min-width: 768px) {
   .choose li {
-    width: 90%;
+    display: flex;
+    align-items: center;
+    padding: 30px 100px 30px 64px;
   }
 }
 .choose li .description {
@@ -88,12 +96,12 @@ header h1 {
 }
 .choose li .number {
   color: white;
-  background-color: #9256dc;
+  background-color: #9356DC;
   padding: 3px 7px 3px 7px;
   border-radius: 12px;
   font-size: small;
   position: absolute;
-  left: 10px;
+  left: 14px;
 }
 .choose li i {
   color: grey;
@@ -104,6 +112,93 @@ header h1 {
 .choose li:hover {
   opacity: 0.7;
   box-shadow: 3px 3px 15px black;
+}
+.choose .pink-description {
+  background-color: #f5edff;
+}
+.choose .pink-description i {
+  color: #9356DC;
+}
+
+.menus {
+  background-color: #f6f6f6;
+  padding: 20px;
+  padding-bottom: 50px;
+}
+.menus h2 {
+  padding-top: 15px;
+}
+.menus .menus__cards .new {
+  position: relative;
+}
+.menus .menus__cards .new::before {
+  content: "Nouveau";
+  position: absolute;
+  background-color: #99E2D0;
+  color: rgba(0, 128, 0, 0.6509803922);
+  right: 20px;
+  top: 20px;
+  padding: 7px 12px;
+  font-weight: bold;
+  font-size: small;
+}
+.menus .card {
+  border-radius: 15px;
+  margin-bottom: 30px;
+  box-shadow: 2px 2px 11px -7px black;
+}
+.menus .card__image {
+  width: 100%;
+  height: 170px;
+  border-radius: 15px 15px 0 0;
+  object-fit: cover;
+}
+.menus .card a {
+  text-decoration: none;
+  color: black;
+}
+.menus .card__description {
+  position: relative;
+}
+.menus .card__description h3, .menus .card__description p {
+  margin: 10px 0 -17px 15px;
+  padding-bottom: 10px;
+}
+.menus .card__description p {
+  color: #454242;
+  margin-bottom: 10px;
+}
+.menus .card__description i {
+  font-size: 1.5rem;
+  position: absolute;
+  right: 25px;
+  top: 0px;
+  color: dimgrey;
+}
+
+footer {
+  background-color: rgba(1, 1, 1, 0.8196078431);
+  padding-bottom: 20px;
+}
+footer h2 {
+  font-family: "Shrikhand";
+  margin: 0;
+  padding-left: 35px;
+  padding-top: 15px;
+  font-size: large;
+  color: rgba(246, 246, 246, 0.9098039216);
+  font-weight: 100;
+}
+footer li {
+  list-style: none;
+  color: rgba(246, 246, 246, 0.9098039216);
+  margin-bottom: 10px;
+}
+footer i {
+  padding-right: 6px;
+}
+footer .icon1 {
+  padding-right: 12px;
 }
 
 /*# sourceMappingURL=style.css.map */

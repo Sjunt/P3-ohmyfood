@@ -1,0 +1,59 @@
+@import "../utils/colors.scss";
+
+.menus{
+    background-color: #f6f6f6;
+    padding: 20px;
+    padding-bottom: 50px;
+    & h2 {
+        padding-top: 15px;
+    }
+    .menus__cards{
+        .new{
+            position: relative;
+        }
+        .new::before{
+            content: "Nouveau";
+            position: absolute;
+            background-color: $tertiaire;
+            color: #008000a6;
+            right: 20px;
+            top: 20px;
+            padding: 7px 12px;
+            font-weight: bold;
+            font-size: small;
+        }
+    }
+    & .card {
+        border-radius: 15px;
+        margin-bottom: 30px;
+        @include base-shadow;
+        &__image{
+            width: 100%;
+            height: 170px;
+            border-radius: 15px 15px 0 0;
+            object-fit: cover;
+        }
+        & a {
+            text-decoration: none;
+            color: black;
+        }
+        &__description{
+            position: relative;
+            & h3, p {
+                margin: 10px 0 -17px 15px;
+                padding-bottom: 10px;
+            } 
+            & p{
+                color: #454242;
+                margin-bottom: 10px;
+            }          
+            & i {
+                font-size: 1.5rem;
+                position: absolute;
+                right: 25px;
+                top: 0px;
+                color: dimgrey;
+            }
+        }
+    }
+}

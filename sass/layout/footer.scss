@@ -1,0 +1,24 @@
+footer{
+    background-color: #010101d1;
+    padding-bottom: 20px;
+    & h2{
+        font-family: "Shrikhand";
+        margin: 0;
+        padding-left: 35px;
+        padding-top: 15px;
+        font-size : large;
+        color: #f6f6f6e8;
+        font-weight: 100;
+    }
+    & li{
+    list-style: none;
+    color: #f6f6f6e8;
+    margin-bottom: 10px;
+    }
+        & i {
+            padding-right: 6px;
+        }
+        & .icon1{
+            padding-right: 12px;
+        }
+}

@@ -1,6 +1,11 @@
+@import "../utils/colors.scss";
+
 .choose{
     & h2{
         margin: 35px 0px 25px 20px;
+        @media (min-width: 768px) {
+            text-align: center;
+        }
     }
     & ul{
         list-style: none;
@@ -15,20 +20,23 @@
         @include base-shadow;
         background-color: #f6f6f6;
         padding: 30px 5px 30px 5px;
-        @media (max-width: 767px) {
-            width: 90%; 
+        width: 90%; 
+        @media (min-width: 768px) {
+            display: flex;
+            align-items: center;
+            padding: 30px 100px 30px 64px;
         }
         & .description {
             font-weight: bold;
         }
         & .number{
             color: white;
-            background-color: #9256dc;
+            background-color: $primaire;
             padding: 3px 7px 3px 7px;
             border-radius: 12px;
             font-size: small;
             position: absolute;
-            left: 10px;
+            left: 14px;
         }
         & i {
             color: grey;
@@ -39,6 +47,12 @@
         &:hover{
             @include opacity_shadow
         }
+    } 
+    & .pink-description {
+        background-color: #f5edff;
+            & i {
+                    color: $primaire;
+                }
     }
 }
 
