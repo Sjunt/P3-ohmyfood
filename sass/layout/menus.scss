@@ -3,7 +3,7 @@
 .menus{
     background-color: #f6f6f6;
     padding: 20px;
-    padding-bottom: 50px;
+    padding-bottom: 35px;
     & h2 {
         padding-top: 15px;
     }
@@ -54,6 +54,15 @@
                 top: 0px;
                 color: dimgrey;
             }
+        }
+        & .hearth__animation:hover{
+            cursor: pointer;   
+            font-weight: bold;
+            background: linear-gradient( $primaire, $secondaire);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            transform: scale(1.2);
         }
     }
 }
