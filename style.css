@@ -15,6 +15,7 @@ header {
 }
 header h1 {
   margin: 7px;
+  font-weight: 500;
 }
 
 /* localisation */
@@ -61,6 +62,7 @@ header h1 {
   box-shadow: 3px 3px 15px black;
 }
 
+/* Choisissez un restaurants */
 .choose h2 {
   margin: 35px 0px 25px 20px;
 }
@@ -74,6 +76,7 @@ header h1 {
   display: flex;
   flex-wrap: wrap;
   padding-left: 25px;
+  padding-bottom: 20px;
 }
 .choose li {
   justify-content: center;
@@ -120,6 +123,7 @@ header h1 {
   color: #9356DC;
 }
 
+/*Choisissez votre menu*/
 .menus {
   background-color: #f6f6f6;
   padding: 20px;
@@ -136,8 +140,8 @@ header h1 {
   position: absolute;
   background-color: #99E2D0;
   color: rgba(0, 128, 0, 0.6509803922);
-  right: 20px;
-  top: 20px;
+  right: 10px;
+  top: 15px;
   padding: 7px 12px;
   font-weight: bold;
   font-size: small;
@@ -172,8 +176,8 @@ header h1 {
   font-size: 1.5rem;
   position: absolute;
   right: 25px;
-  top: 0px;
-  color: dimgrey;
+  top: 7px;
+  color: #828282;
 }
 .menus .card .hearth__animation:hover {
   cursor: pointer;
@@ -185,6 +189,7 @@ header h1 {
   transform: scale(1.2);
 }
 
+/*Footer*/
 footer {
   background-color: rgba(1, 1, 1, 0.8196078431);
   padding-bottom: 20px;
@@ -194,9 +199,13 @@ footer h2 {
   margin: 0;
   padding-left: 35px;
   padding-top: 15px;
-  font-size: large;
+  font-size: 20px;
   color: rgba(246, 246, 246, 0.9098039216);
   font-weight: 100;
+}
+footer a {
+  text-decoration: none;
+  color: rgba(246, 246, 246, 0.9098039216);
 }
 footer li {
   list-style: none;

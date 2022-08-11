@@ -1,5 +1,6 @@
 @import "../utils/colors.scss";
 
+/*Choisissez votre menu*/
 .menus{
     background-color: #f6f6f6;
     padding: 20px;
@@ -51,8 +52,8 @@
                 font-size: 1.5rem;
                 position: absolute;
                 right: 25px;
-                top: 0px;
-                color: dimgrey;
+                top: 7px;
+                color: #828282;
             }
         }
         & .hearth__animation:hover{

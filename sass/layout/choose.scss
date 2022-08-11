@@ -1,5 +1,6 @@
 @import "../utils/colors.scss";
 
+/* Choisissez un restaurants */
 .choose{
     & h2{
         margin: 35px 0px 25px 20px;
@@ -12,6 +13,7 @@
         display: flex;
         flex-wrap: wrap;
         padding-left: 25px;
+        padding-bottom: 20px;
     }
     & li{
         justify-content: center;
