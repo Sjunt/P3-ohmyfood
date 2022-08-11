@@ -1,4 +1,6 @@
 @import "../utils/colors.scss";
+@import "../utils/hover.scss";
+@import "../utils/hearth.scss";
 
 /*Choisissez votre menu*/
 .menus{
@@ -26,7 +28,7 @@
     }
     & .card {
         border-radius: 15px;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
         @include base-shadow;
         &__image{
             width: 100%;
@@ -49,21 +51,11 @@
                 margin-bottom: 10px;
             }          
             & i {
-                font-size: 1.5rem;
-                position: absolute;
-                right: 25px;
-                top: 7px;
-                color: #828282;
+                @include hearth;
             }
         }
         & .hearth__animation:hover{
-            cursor: pointer;   
-            font-weight: bold;
-            background: linear-gradient( $primaire, $secondaire);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            transform: scale(1.2);
+            @include hearth_hover;
         }
     }
 }
