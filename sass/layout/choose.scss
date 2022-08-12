@@ -39,6 +39,9 @@
             font-size: small;
             position: absolute;
             left: 14px;
+            @media (min-width: 992px){
+                position: static;
+            }
         }
         & i {
             color: grey;

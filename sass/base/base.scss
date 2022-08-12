@@ -3,4 +3,10 @@
 body{
     font-family: 'Roboto', sans-serif;
     margin: 0px;
-}
+    @media (min-width: 992px){
+        max-width: 1000px;
+        margin: auto;
+    }
+        
+    }
+
