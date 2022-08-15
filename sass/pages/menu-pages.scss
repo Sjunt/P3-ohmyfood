@@ -1,5 +1,8 @@
 @import "../utils/hover.scss";
 @import "../utils/hearth.scss";
+@import "../utils/animations.scss";
+
+
 
 /*Page 1*/
 
@@ -12,17 +15,100 @@ img{
     border-radius: 40px 40px 0 0;
     margin-top: -35px;
     padding: 15px;
-    background-color: #f5f5f5;
+    background-color: #f6f6f6;
+    & .fa-heart{
+        @include hearth;
+        &:hover.hearth__animation{
+            @include hearth-hover;
+            }
+        }
     & h2{
         font-family: "Shrikhand";
         position: relative;
         font-weight: 100;
-        padding-left: 20px;
-        }
-        & i{
-        @include hearth;
-        }
-            & :hover.hearth__animation{
-                @include hearth-hover;
-            }
+        margin-bottom: 0px;
     }
+    .explorer button{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+
+    .menus{
+        padding: 0px;
+        h3{
+            position: relative;
+            font-weight: 100;
+            color: grey;
+            &::after{
+                content: "";
+                position: absolute;
+                background-color: $tertiaire;
+                height: 3px;
+                width: 50px;
+                bottom: -7px;
+                left: 0px;
+            }
+        }
+        & .card{
+            display: flex;
+            overflow: hidden; 
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            width: auto;
+            &:hover .menus__hover{
+                transition: margin-right 0.4s;
+                margin-right: 0;
+                transition: 0.4s;          
+                i {
+                    animation: spin-hover 0.5s ease-in-out;           
+                }  
+            } 
+            .menu__price{
+                margin-left: auto;
+                align-self: self-end;
+                font-weight: 500;
+                margin-right: 15px;
+            }
+            & .menus__hover{
+                display: grid;
+                place-content: center;
+                background-color: $tertiaire;
+                margin-right: -60px;
+                width: 60px;
+                color: white;
+                font-size: x-large;
+                transition-duration: 0.5s;
+                /*toujours la même taille*/
+                flex-shrink: 0;
+            }  
+            & .menus__card{
+                display: flex;
+                flex-direction: column;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                width: auto;
+                overflow: hidden;
+                
+                & h4{
+                    margin-bottom: -10px;
+                    margin-top: 10px;
+                }
+                p{
+                    color: grey;
+                }
+                p, h4{
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    width: auto;
+                    overflow: hidden;
+                    margin-left: 10px;
+                }
+            }
+
+        }
+    } 
+} 
+
+
+  
