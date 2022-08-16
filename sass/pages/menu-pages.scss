@@ -4,7 +4,18 @@
 
 
 
-/*Page 1*/
+/*Pages menus*/
+
+header{
+    i{
+        text-decoration: none;
+        color: black;  
+        position: absolute;
+        left: 30px;
+        top: 17px;
+        font-size: large;
+    }
+}
 
 img{
     width: 100%;
@@ -29,8 +40,8 @@ img{
         margin-bottom: 0px;
     }
     .explorer button{
-        padding-left: 40px;
-        padding-right: 40px;
+        padding: 16px 42px 16px 42px;
+        margin: -5px 0 5px 0px;
     }
 
 
@@ -40,6 +51,7 @@ img{
             position: relative;
             font-weight: 100;
             color: grey;
+            margin: 40px 0 25px 0;
             &::after{
                 content: "";
                 position: absolute;
@@ -51,11 +63,19 @@ img{
             }
         }
         & .card{
+            @for $i from 2 through 12 {
+                &:nth-child(#{$i}) {
+                    animation-delay: 100ms * $i;
+                    }
+                }
             display: flex;
             overflow: hidden; 
             white-space: nowrap;
             text-overflow: ellipsis;
             width: auto;
+            cursor: pointer;
+            animation: gradual-onset 1s;
+            animation-fill-mode: backwards;
             &:hover .menus__hover{
                 transition: margin-right 0.4s;
                 margin-right: 0;
@@ -69,6 +89,7 @@ img{
                 align-self: self-end;
                 font-weight: 500;
                 margin-right: 15px;
+                padding-left: 25px;
             }
             & .menus__hover{
                 display: grid;
@@ -90,12 +111,14 @@ img{
                 width: auto;
                 overflow: hidden;
                 
-                & h4{
+                h4{
                     margin-bottom: -10px;
                     margin-top: 10px;
+                    font-size: large;
                 }
                 p{
                     color: grey;
+                    font-size: 15px;
                 }
                 p, h4{
                     white-space: nowrap;

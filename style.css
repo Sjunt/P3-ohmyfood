@@ -240,7 +240,26 @@ footer .icon1 {
     transform: rotate(0);
   }
 }
-/*Page 1*/
+@keyframes gradual-onset {
+  0% {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+/*Pages menus*/
+header i {
+  text-decoration: none;
+  color: black;
+  position: absolute;
+  left: 30px;
+  top: 17px;
+  font-size: large;
+}
+
 img {
   width: 100%;
 }
@@ -276,8 +295,8 @@ img {
   margin-bottom: 0px;
 }
 .menu__page1 .explorer button {
-  padding-left: 40px;
-  padding-right: 40px;
+  padding: 16px 42px 16px 42px;
+  margin: -5px 0 5px 0px;
 }
 .menu__page1 .menus {
   padding: 0px;
@@ -286,6 +305,7 @@ img {
   position: relative;
   font-weight: 100;
   color: grey;
+  margin: 40px 0 25px 0;
 }
 .menu__page1 .menus h3::after {
   content: "";
@@ -302,6 +322,42 @@ img {
   white-space: nowrap;
   text-overflow: ellipsis;
   width: auto;
+  cursor: pointer;
+  animation: gradual-onset 1s;
+  animation-fill-mode: backwards;
+}
+.menu__page1 .menus .card:nth-child(2) {
+  animation-delay: 200ms;
+}
+.menu__page1 .menus .card:nth-child(3) {
+  animation-delay: 300ms;
+}
+.menu__page1 .menus .card:nth-child(4) {
+  animation-delay: 400ms;
+}
+.menu__page1 .menus .card:nth-child(5) {
+  animation-delay: 500ms;
+}
+.menu__page1 .menus .card:nth-child(6) {
+  animation-delay: 600ms;
+}
+.menu__page1 .menus .card:nth-child(7) {
+  animation-delay: 700ms;
+}
+.menu__page1 .menus .card:nth-child(8) {
+  animation-delay: 800ms;
+}
+.menu__page1 .menus .card:nth-child(9) {
+  animation-delay: 900ms;
+}
+.menu__page1 .menus .card:nth-child(10) {
+  animation-delay: 1000ms;
+}
+.menu__page1 .menus .card:nth-child(11) {
+  animation-delay: 1100ms;
+}
+.menu__page1 .menus .card:nth-child(12) {
+  animation-delay: 1200ms;
 }
 .menu__page1 .menus .card:hover .menus__hover {
   transition: margin-right 0.4s;
@@ -316,6 +372,7 @@ img {
   align-self: self-end;
   font-weight: 500;
   margin-right: 15px;
+  padding-left: 25px;
 }
 .menu__page1 .menus .card .menus__hover {
   display: grid;
@@ -340,9 +397,11 @@ img {
 .menu__page1 .menus .card .menus__card h4 {
   margin-bottom: -10px;
   margin-top: 10px;
+  font-size: large;
 }
 .menu__page1 .menus .card .menus__card p {
   color: grey;
+  font-size: 15px;
 }
 .menu__page1 .menus .card .menus__card p, .menu__page1 .menus .card .menus__card h4 {
   white-space: nowrap;
