@@ -40,6 +40,9 @@ img{
         position: relative;
         font-weight: 100;
         margin-bottom: 0px;
+        @media (min-width: 768px){
+            text-align: center;
+        }
     }
     .explorer button{
         padding: 16px 42px 16px 42px;
@@ -137,6 +140,9 @@ img{
 
 .la_note_adjust{
     margin-top: -245px;
+    @media (min-width: 768px){
+        margin-top: -700px;
+    }
 }
 
 
