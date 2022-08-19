@@ -16,7 +16,7 @@ body{
         background: linear-gradient( $primaire, $secondaire);
         z-index: 1;
         animation: loading 80ms 3s forwards;
-        transform-origin: top;
+        transform-origin: bottom;
         h1 {
             font-family:'Shrikhand';
             animation: gradual-onset 1s;

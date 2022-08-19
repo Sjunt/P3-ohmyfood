@@ -20,7 +20,8 @@
 
 @keyframes loading{
   to {
-      transform: scale(0);
+    opacity: 0;
+    z-index: -1;
   }
 }
 

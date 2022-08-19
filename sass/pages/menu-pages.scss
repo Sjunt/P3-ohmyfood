@@ -21,6 +21,8 @@ img{
     width: 100%;
 }
 
+
+
 .menu__page1{
     position: relative;
     border-radius: 40px 40px 0 0;
@@ -63,7 +65,7 @@ img{
             }
         }
         & .card{
-            @for $i from 2 through 12 {
+            @for $i from 2 through 13 {
                 &:nth-child(#{$i}) {
                     animation-delay: 100ms * $i;
                     }
@@ -132,6 +134,10 @@ img{
         }
     } 
 } 
+
+.la_note_adjust{
+    margin-top: -245px;
+}
 
 
   

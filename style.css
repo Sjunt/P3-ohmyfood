@@ -18,7 +18,7 @@ body .loading-screen {
   background: linear-gradient(#9356DC, #FF79DA);
   z-index: 1;
   animation: loading 80ms 3s forwards;
-  transform-origin: top;
+  transform-origin: bottom;
 }
 body .loading-screen h1 {
   font-family: "Shrikhand";
@@ -287,7 +287,8 @@ footer .icon1 {
 }
 @keyframes loading {
   to {
-    transform: scale(0);
+    opacity: 0;
+    z-index: -1;
   }
 }
 @keyframes loading-spin {
@@ -407,6 +408,9 @@ img {
 .menu__page1 .menus .card:nth-child(12) {
   animation-delay: 1200ms;
 }
+.menu__page1 .menus .card:nth-child(13) {
+  animation-delay: 1300ms;
+}
 .menu__page1 .menus .card:hover .menus__hover {
   transition: margin-right 0.4s;
   margin-right: 0;
@@ -457,6 +461,10 @@ img {
   width: auto;
   overflow: hidden;
   margin-left: 10px;
+}
+
+.la_note_adjust {
+  margin-top: -245px;
 }
 
 /*# sourceMappingURL=style.css.map */
